@@ -114,7 +114,7 @@
                     </div>
                   </div>
                   <div class="col-7 col-sm-8 col-lg-9">
-                    <div class="progress">
+                    <div class="progress" data-bs-toggle="tooltip" title="75%">
                       <div
                         class="progress-bar"
                         role="progressbar"
@@ -139,7 +139,7 @@
                     </div>
                   </div>
                   <div class="col-7 col-sm-8 col-lg-9">
-                    <div class="progress">
+                    <div class="progress" data-bs-toggle="tooltip" title="100%">
                       <div
                         class="progress-bar"
                         role="progressbar"
@@ -162,7 +162,7 @@
                     </div>
                   </div>
                   <div class="col-7 col-sm-8 col-lg-9">
-                    <div class="progress">
+                    <div class="progress" data-bs-toggle="tooltip" title="75%">
                       <div
                         class="progress-bar"
                         role="progressbar"
@@ -185,7 +185,7 @@
                     </div>
                   </div>
                   <div class="col-7 col-sm-8 col-lg-9">
-                    <div class="progress">
+                    <div class="progress" data-bs-toggle="tooltip" title="25%">
                       <div
                         class="progress-bar"
                         role="progressbar"
@@ -208,7 +208,7 @@
                     </div>
                   </div>
                   <div class="col-7 col-sm-8 col-lg-9">
-                    <div class="progress">
+                    <div class="progress" data-bs-toggle="tooltip" title="75%">
                       <div
                         class="progress-bar"
                         role="progressbar"
@@ -256,7 +256,7 @@
                     </div>
                   </div>
                   <div class="col-7 col-sm-8 col-lg-9">
-                    <div class="progress">
+                    <div class="progress" data-bs-toggle="tooltip" title="75%">
                       <div
                         class="progress-bar"
                         role="progressbar"
@@ -281,7 +281,7 @@
                     </div>
                   </div>
                   <div class="col-7 col-sm-8 col-lg-9">
-                    <div class="progress">
+                    <div class="progress" data-bs-toggle="tooltip" title="100%">
                       <div
                         class="progress-bar"
                         role="progressbar"
@@ -306,7 +306,7 @@
                     </div>
                   </div>
                   <div class="col-7 col-sm-8 col-lg-9">
-                    <div class="progress">
+                    <div class="progress" data-bs-toggle="tooltip" title="75%">
                       <div
                         class="progress-bar"
                         role="progressbar"
@@ -329,7 +329,7 @@
                     </div>
                   </div>
                   <div class="col-7 col-sm-8 col-lg-9">
-                    <div class="progress">
+                    <div class="progress" data-bs-toggle="tooltip" title="75%">
                       <div
                         class="progress-bar"
                         role="progressbar"
@@ -352,7 +352,7 @@
                     </div>
                   </div>
                   <div class="col-7 col-sm-8 col-lg-9">
-                    <div class="progress">
+                    <div class="progress" data-bs-toggle="tooltip" title="50%">
                       <div
                         class="progress-bar"
                         role="progressbar"
@@ -864,6 +864,7 @@
                     name="message"
                     id="message"
                     class="form-control"
+                    rows="3"
                   ></textarea>
                 </div>
                 <div class="col-12">
@@ -901,21 +902,21 @@
           <div class="col-12 col-md-4 text-md-end">
             <ul class="list-inline">
               <li class="list-inline-item">
-                <a href=""
+                <a href="" data-bs-toggle="tooltip" title="LinkedIn"
                   ><i
                     class="fa-brands fa-linkedin fa-2xl text-dark text-decoration-none"
                   ></i
                 ></a>
               </li>
               <li class="list-inline-item">
-                <a href=""
+                <a href="" data-bs-toggle="tooltip" title="Instagram"
                   ><i
                     class="fa-brands fa-instagram-square fa-2xl text-dark text-decoration-none"
                   ></i
                 ></a>
               </li>
               <li class="list-inline-item">
-                <a href=""
+                <a href="" data-bs-toggle="tooltip" title="Twitter"
                   ><i
                     class="fa-brands fa-twitter-square fa-2xl text-dark text-decoration-none"
                   ></i
@@ -993,6 +994,10 @@
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
         crossorigin="anonymous"
       ></script>
+      <script>var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+        var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+          return new bootstrap.Tooltip(tooltipTriggerEl)
+        })</script>
     </footer>
   </body>
 </html>
