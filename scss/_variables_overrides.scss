@@ -1,0 +1,11 @@
+
+// change primary and secondary default colors
+$primary: #14638A;
+$secondary: #72A1B8;
+
+// override gobal features for shadow and rounded options:
+$enable-rounded: false;
+$enable-shadows: true;
+
+// fix modal bug in offcanvas
+$zindex-offcanvas: 1051;
